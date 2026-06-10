@@ -239,8 +239,10 @@ export const translations = {
         business: 'What does your business do?',
         goal: 'What would you like to achieve?',
         submit: 'Send request',
+        sending: 'Sending…',
         successTitle: 'Request sent!',
         successText: "We'll be in touch within a few hours.",
+        errorText: 'Something went wrong. Please try again or contact us directly below.',
       },
       benefits: [
         'Reply within a few hours',
@@ -515,8 +517,10 @@ export const translations = {
         business: 'Ko dara tavs uzņēmums?',
         goal: 'Ko tu vēlies sasniegt?',
         submit: 'Nosūtīt pieteikumu',
+        sending: 'Sūta…',
         successTitle: 'Pieteikums nosūtīts!',
         successText: 'Sazināsimies ar tevi dažu stundu laikā.',
+        errorText: 'Radās kļūda. Mēģini vēlreiz vai sazinies ar mums zemāk.',
       },
       benefits: [
         'Atbilde dažu stundu laikā',
@@ -791,8 +795,10 @@ export const translations = {
         business: 'Чем занимается твой бизнес?',
         goal: 'Какой результат ты хочешь получить?',
         submit: 'Отправить заявку',
+        sending: 'Отправляем…',
         successTitle: 'Заявка отправлена!',
         successText: 'Свяжемся с тобой в течение нескольких часов.',
+        errorText: 'Что-то пошло не так. Попробуй ещё раз или напиши нам ниже.',
       },
       benefits: [
         'Ответ в течение нескольких часов',

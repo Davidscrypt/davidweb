@@ -223,6 +223,9 @@ export default function App() {
   const [faqOpen, setFaqOpen] = useState({})
   const [scrolled, setScrolled] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [formError, setFormError] = useState('')
+  const [hp, setHp] = useState('') // honeypot (spam trap)
   const [formData, setFormData] = useState({
     name: '', phone: '', instagram: '', business: '', goal: '',
   })
@@ -272,11 +275,27 @@ export default function App() {
 
   const toggleFaq = (i) => setFaqOpen((p) => ({ ...p, [i]: !p[i] }))
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // TODO: Connect to backend / Telegram bot / EmailJS / Formspree
-    // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
-    setSubmitted(true)
+    if (sending) return
+    setSending(true)
+    setFormError('')
+    try {
+      const resp = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, company: hp, lang }),
+      })
+      if (!resp.ok) {
+        const j = await resp.json().catch(() => ({}))
+        throw new Error(j.error || 'send_failed')
+      }
+      setSubmitted(true)
+    } catch (err) {
+      setFormError(t.contact.form.errorText)
+    } finally {
+      setSending(false)
+    }
   }
 
   const navItems = [
@@ -940,11 +959,27 @@ export default function App() {
                             />
                           </div>
                         ))}
+                        {/* Honeypot — hidden from real users, catches bots */}
+                        <input
+                          type="text"
+                          name="company"
+                          tabIndex={-1}
+                          autoComplete="off"
+                          aria-hidden="true"
+                          value={hp}
+                          onChange={(e) => setHp(e.target.value)}
+                          className="hidden"
+                        />
                         <div className="pt-1">
-                          <CTAPrimary className="w-full justify-center">
-                            {t.contact.form.submit}
+                          <CTAPrimary className={`w-full justify-center ${sending ? 'opacity-70 pointer-events-none' : ''}`}>
+                            {sending ? t.contact.form.sending : t.contact.form.submit}
                           </CTAPrimary>
                         </div>
+                        {formError && (
+                          <p className="text-red-400/80 text-xs text-center mt-1 leading-relaxed">
+                            {formError}
+                          </p>
+                        )}
                       </form>
                     )}
                   </div>
