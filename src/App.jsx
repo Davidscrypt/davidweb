@@ -209,7 +209,7 @@ const WHO_FOR_IMAGES = [
   'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=240&fit=crop&q=80', // beauty specialists
   'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=600&h=240&fit=crop&q=80', // studios & salons
   'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=240&fit=crop&q=80', // local businesses
-  'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=240&fit=crop&q=80', // experts & consultants
+  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=240&fit=crop&q=80', // experts & consultants
   'https://images.unsplash.com/photo-1611262588024-d12430b98920?w=600&h=240&fit=crop&q=80', // only on Instagram
   'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=240&fit=crop&q=80', // trainers & teachers
   'https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&h=240&fit=crop&q=80', // home & repair
