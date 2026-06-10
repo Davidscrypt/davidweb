@@ -4,7 +4,7 @@ import {
   MessageCircle, Mail, Globe, Calendar,
   Smartphone, FileText, Star, ArrowRight,
   MapPin, Clock, Zap, Send, Phone,
-  Instagram, CheckCircle2,
+  Instagram, CheckCircle2, Lock,
 } from 'lucide-react'
 import { translations } from './translations'
 
@@ -214,6 +214,13 @@ const WHO_FOR_IMAGES = [
   'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=240&fit=crop&q=80', // trainers & teachers
   'https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&h=240&fit=crop&q=80', // home & repair
 ]
+
+// Conceptual address shown in the browser frame of each project card (not a real domain claim)
+const siteLabelFor = (url) =>
+  url.includes('furniture') ? 'furniture-studio'
+    : url.includes('beauty') ? 'beauty-studio'
+      : url.includes('local') ? 'local-business'
+        : 'website'
 
 // ─── MAIN APP ────────────────────────────────────────────────────────────────
 
@@ -697,23 +704,43 @@ export default function App() {
                   className={`reveal reveal-d${(i % 2) + 1} group p-[1px] bg-gradient-to-b from-white/[0.09] to-transparent rounded-[1.75rem] hover:from-[#9CFF00]/25 hover:to-[#9CFF00]/[0.04] transition-all duration-500 ease-premium`}
                 >
                   <div className="bg-[#090D0F] rounded-[1.6875rem] overflow-hidden h-full flex flex-col group-hover:bg-[#0B100C] transition-colors duration-500">
-                    {/* Real screenshot — clearly visible, no overlays.
-                        All cards share one aspect ratio for a balanced grid; the booking
-                        mockup is centered so only its dark margins trim, never the devices. */}
-                    <div className="relative overflow-hidden border-b border-white/[0.06] bg-[#0B1012] aspect-[4/3]">
-                      <img
-                        src={EXAMPLE_IMAGES[i]}
-                        alt={`${card.type} — website concept by David Web Studio`}
-                        loading="lazy"
-                        className={`w-full h-full object-cover transition-transform duration-700 ease-premium group-hover:scale-[1.03] ${
-                          EXAMPLE_IMAGES[i].includes('booking') ? 'object-center' : 'object-top'
-                        }`}
-                      />
-                      <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#050706]/80 backdrop-blur-md border border-[#9CFF00]/25 text-[#9CFF00] text-[10px] font-semibold font-display uppercase tracking-[0.16em]">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#9CFF00]" />
-                        {card.type}
-                      </span>
-                    </div>
+                    {/* Project preview. Real screenshots sit inside a clean browser window
+                        for a premium "real site we built" feel; the booking concept stays a
+                        device mockup. Both lift gently on hover. */}
+                    {EXAMPLE_IMAGES[i].includes('booking') ? (
+                      <div className="relative overflow-hidden border-b border-white/[0.06] bg-[#0c0c0d] aspect-[4/3]">
+                        <img
+                          src={EXAMPLE_IMAGES[i]}
+                          alt={`${card.type} — concept by David Web Studio`}
+                          loading="lazy"
+                          className="w-full h-full object-cover object-center transition-transform duration-700 ease-premium group-hover:scale-[1.05]"
+                        />
+                      </div>
+                    ) : (
+                      <div className="relative border-b border-white/[0.06] bg-gradient-to-br from-[#0e1316] to-[#0a0d0f] aspect-[4/3] p-4 sm:p-5">
+                        <div className="relative h-full rounded-xl overflow-hidden border border-white/[0.09] shadow-[0_20px_45px_-15px_rgba(0,0,0,0.8)] group-hover:border-[#9CFF00]/20 transition-colors duration-500">
+                          {/* Browser chrome */}
+                          <div className="absolute top-0 inset-x-0 z-10 h-8 bg-[#0e1316] border-b border-white/[0.07] flex items-center px-3 gap-1.5">
+                            <span className="w-2 h-2 rounded-full bg-[#ff5f57]/70" />
+                            <span className="w-2 h-2 rounded-full bg-[#febc2e]/70" />
+                            <span className="w-2 h-2 rounded-full bg-[#28c840]/70" />
+                            <div className="flex-1 ml-2 mr-1 h-4 rounded bg-white/[0.05] border border-white/[0.06] flex items-center justify-center gap-1">
+                              <Lock className="w-2 h-2 text-white/30" strokeWidth={2.5} />
+                              <span className="text-[9px] text-white/40 font-medium tracking-wide truncate">
+                                {siteLabelFor(EXAMPLE_IMAGES[i])}
+                              </span>
+                            </div>
+                          </div>
+                          {/* Screenshot */}
+                          <img
+                            src={EXAMPLE_IMAGES[i]}
+                            alt={`${card.type} — concept by David Web Studio`}
+                            loading="lazy"
+                            className="absolute top-8 inset-x-0 bottom-0 w-full h-[calc(100%-2rem)] object-cover object-top transition-transform duration-[1600ms] ease-premium group-hover:scale-[1.07]"
+                          />
+                        </div>
+                      </div>
+                    )}
 
                     <div className="p-6 sm:p-7 flex-1 flex flex-col">
                       <h3 className="font-display font-bold text-white text-xl mb-2">{card.type}</h3>
