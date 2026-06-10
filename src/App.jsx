@@ -203,16 +203,16 @@ const EXAMPLE_IMAGES = [
   '/work-booking.png',
 ]
 
-// Real photos for "Who It's For" cards
+// Real photos for "Who It's For" cards (one per niche, all verified live)
 const WHO_FOR_IMAGES = [
-  'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=160&fit=crop&q=75',
-  'https://images.unsplash.com/photo-1487412947147-5cebf100d293?w=400&h=160&fit=crop&q=75',
-  'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=160&fit=crop&q=75',
-  'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=160&fit=crop&q=75',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=160&fit=crop&q=75',
-  'https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&h=160&fit=crop&q=75',
-  'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=160&fit=crop&q=75',
-  'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&h=160&fit=crop&q=75',
+  'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=240&fit=crop&q=80', // service providers
+  'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=240&fit=crop&q=80', // beauty specialists
+  'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=600&h=240&fit=crop&q=80', // studios & salons
+  'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=240&fit=crop&q=80', // local businesses
+  'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=240&fit=crop&q=80', // experts & consultants
+  'https://images.unsplash.com/photo-1611262588024-d12430b98920?w=600&h=240&fit=crop&q=80', // only on Instagram
+  'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=240&fit=crop&q=80', // trainers & teachers
+  'https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&h=240&fit=crop&q=80', // home & repair
 ]
 
 // ─── MAIN APP ────────────────────────────────────────────────────────────────
@@ -571,7 +571,7 @@ export default function App() {
                   <div className="bg-[#090D0F] rounded-2xl overflow-hidden h-full group-hover:bg-[#090F0A] transition-colors duration-500">
                     {/* Image header */}
                     <div className="relative h-24 overflow-hidden">
-                      <img src={WHO_FOR_IMAGES[i]} alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style={{ filter: 'saturate(0.35) brightness(0.45)' }} />
+                      <img src={WHO_FOR_IMAGES[i]} alt={card.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style={{ filter: 'saturate(0.9) brightness(0.72)' }} />
                       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#090D0F]" />
                     </div>
                     <div className="px-5 pb-5 -mt-3 relative z-10">
