@@ -222,8 +222,8 @@ export const translations = {
           a: 'Yes. The website is built so you can send visitors to it from Instagram, Facebook, Google or other ads.',
         },
         {
-          q: 'How does a client send a request?',
-          a: 'The client fills in a simple form or contacts you directly via WhatsApp, Instagram, Telegram or email.',
+          q: 'Can my website have a booking system?',
+          a: 'Yes, a booking system can be added to the website — clients will be able to leave a request, choose a service or get in touch in a convenient way.',
         },
       ],
     },
@@ -500,8 +500,8 @@ export const translations = {
           a: 'Jā. Mājaslapa tiek veidota tā, lai uz to varētu novirzīt apmeklētājus no Instagram, Facebook, Google vai citām reklāmām.',
         },
         {
-          q: 'Kā klients atstāj pieteikumu?',
-          a: 'Klients aizpilda vienkāršu formu vai sazinās tieši caur WhatsApp, Instagram, Telegram vai e-pastu.',
+          q: 'Vai manā mājaslapā var būt booking sistēma?',
+          a: 'Jā, mājaslapai var pievienot pieraksta sistēmu — klienti varēs atstāt pieteikumu, izvēlēties pakalpojumu vai sazināties ar jums ērtā veidā.',
         },
       ],
     },
@@ -778,8 +778,8 @@ export const translations = {
           a: 'Да. Сайт создаётся так, чтобы на него можно было направлять посетителей из Instagram, Facebook, Google или другой рекламы.',
         },
         {
-          q: 'Как клиент оставляет заявку?',
-          a: 'Клиент заполняет простую форму или связывается напрямую через WhatsApp, Instagram, Telegram или email.',
+          q: 'Может ли на моём сайте быть система записи?',
+          a: 'Да, на сайт можно добавить систему записи — клиенты смогут оставить заявку, выбрать услугу или связаться с тобой удобным способом.',
         },
       ],
     },
