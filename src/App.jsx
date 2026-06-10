@@ -717,10 +717,10 @@ export default function App() {
                         />
                       </div>
                     ) : (
-                      <div className="relative border-b border-white/[0.06] bg-gradient-to-br from-[#0e1316] to-[#0a0d0f] aspect-[4/3] p-4 sm:p-5">
-                        <div className="relative h-full rounded-xl overflow-hidden border border-white/[0.09] shadow-[0_20px_45px_-15px_rgba(0,0,0,0.8)] group-hover:border-[#9CFF00]/20 transition-colors duration-500">
+                      <div className="relative border-b border-white/[0.06] bg-gradient-to-br from-[#0e1316] to-[#0a0d0f] aspect-[4/3] p-4 sm:p-5 flex items-center">
+                        <div className="w-full rounded-xl overflow-hidden border border-white/[0.09] shadow-[0_20px_45px_-15px_rgba(0,0,0,0.8)] group-hover:border-[#9CFF00]/25 group-hover:-translate-y-1 group-hover:shadow-[0_28px_55px_-15px_rgba(0,0,0,0.85)] transition-all duration-500 ease-premium">
                           {/* Browser chrome */}
-                          <div className="absolute top-0 inset-x-0 z-10 h-8 bg-[#0e1316] border-b border-white/[0.07] flex items-center px-3 gap-1.5">
+                          <div className="h-8 bg-[#0e1316] border-b border-white/[0.07] flex items-center px-3 gap-1.5">
                             <span className="w-2 h-2 rounded-full bg-[#ff5f57]/70" />
                             <span className="w-2 h-2 rounded-full bg-[#febc2e]/70" />
                             <span className="w-2 h-2 rounded-full bg-[#28c840]/70" />
@@ -731,12 +731,12 @@ export default function App() {
                               </span>
                             </div>
                           </div>
-                          {/* Screenshot */}
+                          {/* Full screenshot — shown completely, never cropped */}
                           <img
                             src={EXAMPLE_IMAGES[i]}
                             alt={`${card.type} — concept by David Web Studio`}
                             loading="lazy"
-                            className="absolute top-8 inset-x-0 bottom-0 w-full h-[calc(100%-2rem)] object-cover object-top transition-transform duration-[1600ms] ease-premium group-hover:scale-[1.07]"
+                            className="block w-full h-auto"
                           />
                         </div>
                       </div>
