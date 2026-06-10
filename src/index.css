@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050706;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Reveal animations ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  filter: blur(6px);
+  transition:
+    opacity 0.85s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.85s cubic-bezier(0.32, 0.72, 0, 1),
+    filter 0.85s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+.reveal-d1 { transition-delay: 80ms; }
+.reveal-d2 { transition-delay: 160ms; }
+.reveal-d3 { transition-delay: 240ms; }
+.reveal-d4 { transition-delay: 320ms; }
+.reveal-d5 { transition-delay: 400ms; }
+.reveal-d6 { transition-delay: 480ms; }
+.reveal-d7 { transition-delay: 560ms; }
+.reveal-d8 { transition-delay: 640ms; }
+
+/* ── Gradient text ── */
+.text-gradient-green {
+  background: linear-gradient(130deg, #9CFF00 0%, #7acc00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Glow utilities ── */
+.glow-green {
+  box-shadow:
+    0 0 30px rgba(156, 255, 0, 0.12),
+    0 0 70px rgba(156, 255, 0, 0.06);
+}
+.glow-green-sm {
+  box-shadow: 0 0 16px rgba(156, 255, 0, 0.10);
+}
+
+/* ── Button primary ── */
+.btn-primary {
+  transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1),
+              box-shadow 0.5s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(156, 255, 0, 0.22);
+}
+.btn-primary:active {
+  transform: scale(0.97) translateY(0);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #050706; }
+::-webkit-scrollbar-thumb { background: #9CFF00; border-radius: 2px; }
+
+/* ── FAQ accordion ── */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.55s cubic-bezier(0.32, 0.72, 0, 1),
+              opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  opacity: 0;
+}
+.faq-answer.open {
+  max-height: 400px;
+  opacity: 1;
+}
+
+/* ── Mobile menu overlay ── */
+.menu-overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.menu-link {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.5s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.5s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.menu-overlay.open .menu-link {
+  opacity: 1;
+  transform: translateY(0);
+}
