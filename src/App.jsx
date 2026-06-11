@@ -1029,7 +1029,7 @@ export default function App() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
               {[
                 { platform: 'WhatsApp', icon: MessageCircle, color: '#25D366', href: 'https://wa.me/37126979766' },
-                { platform: 'Instagram', icon: Instagram, color: '#E1306C', href: 'https://www.instagram.com/davidwebstudio_/' },
+                { platform: 'Instagram', icon: Instagram, color: '#E1306C', href: 'https://www.instagram.com/bynarsia/' },
                 { platform: 'Telegram', icon: Send, color: '#0088cc', href: 'https://t.me/bynarsia' },
                 { platform: 'Email', icon: Mail, color: '#9CFF00', href: 'mailto:hello@bynarsia.com' },
               ].map((contact, i) => {

@@ -255,7 +255,7 @@ export const translations = {
       subtitle: 'Choose the channel that suits you best.',
       cards: [
         { platform: 'WhatsApp', handle: 'Message now' },
-        { platform: 'Instagram', handle: '@davidwebstudio_' },
+        { platform: 'Instagram', handle: '@bynarsia' },
         { platform: 'Telegram', handle: '@bynarsia' },
         { platform: 'Email', handle: 'hello@bynarsia.com' },
       ],
@@ -533,7 +533,7 @@ export const translations = {
       subtitle: 'Izvēlies sev ērtāko saziņas kanālu.',
       cards: [
         { platform: 'WhatsApp', handle: 'Rakstīt tagad' },
-        { platform: 'Instagram', handle: '@davidwebstudio_' },
+        { platform: 'Instagram', handle: '@bynarsia' },
         { platform: 'Telegram', handle: '@bynarsia' },
         { platform: 'Email', handle: 'hello@bynarsia.com' },
       ],
@@ -811,7 +811,7 @@ export const translations = {
       subtitle: 'Выбери удобный канал связи.',
       cards: [
         { platform: 'WhatsApp', handle: 'Написать сейчас' },
-        { platform: 'Instagram', handle: '@davidwebstudio_' },
+        { platform: 'Instagram', handle: '@bynarsia' },
         { platform: 'Telegram', handle: '@bynarsia' },
         { platform: 'Email', handle: 'hello@bynarsia.com' },
       ],
