@@ -968,7 +968,7 @@ export default function App() {
                         {[
                           { key: 'name', type: 'text' },
                           { key: 'phone', type: 'tel' },
-                          { key: 'instagram', type: 'url' },
+                          { key: 'instagram', type: 'text' },
                           { key: 'business', type: 'text' },
                           { key: 'goal', type: 'text' },
                         ].map(({ key, type }) => (
