@@ -9,7 +9,7 @@ export const translations = {
       pricing: 'Pricing',
       faq: 'FAQ',
       contact: 'Contact',
-      cta: 'Apply for a website',
+      cta: 'Get offer',
     },
     hero: {
       badge: 'Offer for local businesses',
@@ -288,7 +288,7 @@ export const translations = {
       pricing: 'Cenas',
       faq: 'Jautājumi',
       contact: 'Kontakti',
-      cta: 'Pieteikties mājaslapai',
+      cta: 'Saņemt piedāvājumu',
     },
     hero: {
       badge: 'Piedāvājums vietējiem uzņēmumiem',
@@ -566,7 +566,7 @@ export const translations = {
       pricing: 'Цены',
       faq: 'Вопросы',
       contact: 'Контакты',
-      cta: 'Оставить заявку на сайт',
+      cta: 'Получить предложение',
     },
     hero: {
       badge: 'Предложение для местного бизнеса',
