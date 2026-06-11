@@ -502,7 +502,7 @@ export default function App() {
                 {/* Stats row */}
                 <div className="reveal reveal-d5 grid grid-cols-2 sm:grid-cols-4 gap-3 mt-10">
                   {[t.hero.stat1, t.hero.stat2, t.hero.stat3, t.hero.stat4].map((s, i) => (
-                    <div key={i} className="px-3 py-2.5 bg-white/[0.03] border border-white/[0.07] rounded-xl text-center">
+                    <div key={i} className="px-3 py-2.5 min-h-[3.5rem] flex items-center justify-center bg-white/[0.03] border border-white/[0.07] rounded-xl text-center">
                       <div className="text-xs font-medium text-white/60 leading-snug">{s}</div>
                     </div>
                   ))}
