@@ -11,7 +11,7 @@ const escapeHtml = (s = '') =>
 
 export async function sendLead({ token, chatId, data, lang }) {
   const rows = [
-    '🔔 <b>Новая заявка с сайта</b>',
+    '🔔 <b>Новая заявка — bynarsia.com</b>',
     '',
     data.name && `👤 <b>Имя:</b> ${escapeHtml(data.name)}`,
     data.phone && `📞 <b>Телефон / WhatsApp:</b> ${escapeHtml(data.phone)}`,

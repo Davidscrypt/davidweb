@@ -91,7 +91,7 @@ function HeroMockup() {
             <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]/50" />
             <div className="w-2.5 h-2.5 rounded-full bg-[#9CFF00]/50" />
             <div className="flex-1 mx-4 bg-white/[0.04] rounded-full py-1 px-3">
-              <div className="text-white/20 text-[9px] text-center font-mono">davidwebstudio.com</div>
+              <div className="text-white/20 text-[9px] text-center font-mono">bynarsia.com</div>
             </div>
           </div>
 
@@ -348,7 +348,7 @@ export default function App() {
               onClick={() => scrollTo('hero')}
               className="font-display font-bold text-lg text-white tracking-tight hover:text-[#9CFF00] transition-colors duration-300 ease-premium"
             >
-              David<span className="text-[#9CFF00]">.</span>
+              nars<span className="text-[#9CFF00]">í</span>a
             </button>
 
             {/* Desktop nav */}
@@ -711,7 +711,7 @@ export default function App() {
                       <div className="relative overflow-hidden border-b border-white/[0.06] bg-[#0c0c0d] aspect-[4/3]">
                         <img
                           src={EXAMPLE_IMAGES[i]}
-                          alt={`${card.type} — concept by David Web Studio`}
+                          alt={`${card.type} — concept by narsia`}
                           loading="lazy"
                           className="w-full h-full object-cover object-center transition-transform duration-700 ease-premium group-hover:scale-[1.05]"
                         />
@@ -734,7 +734,7 @@ export default function App() {
                           {/* Full screenshot — shown completely, never cropped */}
                           <img
                             src={EXAMPLE_IMAGES[i]}
-                            alt={`${card.type} — concept by David Web Studio`}
+                            alt={`${card.type} — concept by narsia`}
                             loading="lazy"
                             className="block w-full h-auto"
                           />
@@ -1028,10 +1028,10 @@ export default function App() {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
               {[
-                { platform: 'WhatsApp', icon: MessageCircle, color: '#25D366', href: 'https://wa.me/yourNumber' },
-                { platform: 'Instagram', icon: Instagram, color: '#E1306C', href: 'https://instagram.com/davidwebstudio' },
-                { platform: 'Telegram', icon: Send, color: '#0088cc', href: 'https://t.me/davidwebstudio' },
-                { platform: 'Email', icon: Mail, color: '#9CFF00', href: 'mailto:hello@davidwebstudio.com' },
+                { platform: 'WhatsApp', icon: MessageCircle, color: '#25D366', href: 'https://wa.me/37126979766' },
+                { platform: 'Instagram', icon: Instagram, color: '#E1306C', href: 'https://www.instagram.com/davidwebstudio_/' },
+                { platform: 'Telegram', icon: Send, color: '#0088cc', href: 'https://t.me/bynarsia' },
+                { platform: 'Email', icon: Mail, color: '#9CFF00', href: 'mailto:hello@bynarsia.com' },
               ].map((contact, i) => {
                 const card = t.directContact.cards[i]
                 const Icon = contact.icon
@@ -1097,7 +1097,7 @@ export default function App() {
             {/* Brand */}
             <div className="lg:col-span-2">
               <div className="font-display font-bold text-xl text-white mb-3">
-                David<span className="text-[#9CFF00]">.</span>Web Studio
+                nars<span className="text-[#9CFF00]">í</span>a
               </div>
               <p className="text-white/35 text-sm leading-relaxed max-w-xs">
                 {t.footer.desc}
