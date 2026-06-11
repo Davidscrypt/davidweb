@@ -28,5 +28,5 @@ http.createServer((req, res) => {
     res.end(data)
   })
 }).listen(PORT, () => {
-  console.log(`David Web Studio preview running at http://localhost:${PORT}`)
+  console.log(`narsia preview running at http://localhost:${PORT}`)
 })
