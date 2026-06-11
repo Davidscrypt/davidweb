@@ -134,32 +134,32 @@ export const translations = {
     process: {
       badge: 'Process',
       headline: 'From idea to a ready website',
-      subtitle: 'Five simple steps from the first message to a ready website.',
+      subtitle: 'Five clear steps to go from your first message to a ready website.',
       steps: [
         {
           num: '01',
           title: 'Send the information',
-          desc: 'You send your Instagram, photos and basic information about your business.',
+          desc: 'Send us your Instagram, photos and a short description of your business.',
         },
         {
           num: '02',
-          title: 'We create the first version',
-          desc: 'We prepare the structure and the first website concept.',
+          title: 'We prepare the first version',
+          desc: 'We build the website structure and the first visual version.',
         },
         {
           num: '03',
-          title: 'Review and edits',
-          desc: 'We review the result together and make the necessary changes.',
+          title: 'We review and refine',
+          desc: 'We look at the result together and make the necessary changes.',
         },
         {
           num: '04',
           title: 'We connect everything needed',
-          desc: 'We add the contact form, WhatsApp button, map and other required sections.',
+          desc: 'We add the contact form, lead form, booking option, Google Maps and social media buttons.',
         },
         {
           num: '05',
           title: 'Website is ready',
-          desc: 'You receive a ready website link that you can send to clients and use in ads.',
+          desc: 'You receive a ready website that you can send to clients and use in ads.',
         },
       ],
       note: 'You don’t need to deal with technical details — we prepare everything and show you the final result.',
@@ -412,32 +412,32 @@ export const translations = {
     process: {
       badge: 'Process',
       headline: 'No idejas līdz gatavai mājaslapai',
-      subtitle: 'Pieci vienkārši soļi no pirmās ziņas līdz gatavai mājaslapai.',
+      subtitle: 'Pieci skaidri soļi, lai no pirmās ziņas nonāktu līdz gatavai mājaslapai.',
       steps: [
         {
           num: '01',
           title: 'Nosūti informāciju',
-          desc: 'Tu nosūti savu Instagram, fotogrāfijas un pamatinformāciju par uzņēmumu.',
+          desc: 'Atsūti savu Instagram, fotogrāfijas un īsu informāciju par uzņēmumu.',
         },
         {
           num: '02',
-          title: 'Izveidojam pirmo versiju',
-          desc: 'Sagatavojam struktūru un pirmo mājaslapas konceptu.',
+          title: 'Sagatavojam pirmo versiju',
+          desc: 'Izveidojam mājaslapas struktūru un pirmo vizuālo versiju.',
         },
         {
           num: '03',
-          title: 'Pārskats un labojumi',
-          desc: 'Kopā pārskatām rezultātu un veicam nepieciešamos labojumus.',
+          title: 'Pārskatām un labojam',
+          desc: 'Kopā apskatām rezultātu un veicam nepieciešamos labojumus.',
         },
         {
           num: '04',
-          title: 'Savienojam visu nepieciešamo',
-          desc: 'Pievienojam kontaktformu, WhatsApp pogu, karti un citas vajadzīgās sadaļas.',
+          title: 'Pieslēdzam visu nepieciešamo',
+          desc: 'Pievienojam kontaktformu, pieteikuma formu, booking iespēju, Google Maps un sociālo tīklu pogas.',
         },
         {
           num: '05',
           title: 'Mājaslapa gatava',
-          desc: 'Tu saņem gatavu mājaslapas saiti, ko vari sūtīt klientiem un izmantot reklāmās.',
+          desc: 'Tu saņem gatavu mājaslapu, ko vari sūtīt klientiem un izmantot reklāmās.',
         },
       ],
       note: 'Tev nav jāiedziļinās tehniskās lietās — mēs sagatavojam visu un parādām gala rezultātu.',
@@ -690,32 +690,32 @@ export const translations = {
     process: {
       badge: 'Процесс',
       headline: 'От идеи до готового сайта',
-      subtitle: 'Пять простых шагов от первого сообщения до готового сайта.',
+      subtitle: 'Пять понятных шагов — от первого сообщения до готового сайта.',
       steps: [
         {
           num: '01',
           title: 'Отправляешь информацию',
-          desc: 'Ты отправляешь Instagram, фотографии и основную информацию о бизнесе.',
+          desc: 'Пришли свой Instagram, фотографии и краткую информацию о бизнесе.',
         },
         {
           num: '02',
-          title: 'Создаём первую версию',
-          desc: 'Подготавливаем структуру и первый концепт сайта.',
+          title: 'Готовим первую версию',
+          desc: 'Создаём структуру сайта и первую визуальную версию.',
         },
         {
           num: '03',
-          title: 'Просмотр и правки',
+          title: 'Смотрим и правим',
           desc: 'Вместе смотрим результат и вносим нужные правки.',
         },
         {
           num: '04',
           title: 'Подключаем всё необходимое',
-          desc: 'Добавляем форму заявки, кнопку WhatsApp, карту и другие нужные разделы.',
+          desc: 'Добавляем контактную форму, форму заявки, booking, Google Maps и кнопки соцсетей.',
         },
         {
           num: '05',
           title: 'Сайт готов',
-          desc: 'Ты получаешь готовую ссылку на сайт, которую можно отправлять клиентам и использовать в рекламе.',
+          desc: 'Ты получаешь готовый сайт, который можно отправлять клиентам и использовать в рекламе.',
         },
       ],
       note: 'Тебе не нужно разбираться в технических деталях — мы всё подготовим и покажем готовый результат.',
