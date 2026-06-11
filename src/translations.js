@@ -57,10 +57,10 @@ export const translations = {
       ],
     },
     included: {
-      badge: "What's Included",
-      headline: 'What is included',
+      badge: 'The package',
+      headline: 'Everything is already included',
       subtitle:
-        'Everything you need for your website to be ready for clients.',
+        "A website that's ready to attract and take in clients from day one.",
       items: [
         'Custom structure for your niche',
         'Photos, benefits and reviews',
@@ -336,10 +336,10 @@ export const translations = {
       ],
     },
     included: {
-      badge: 'Kas iekļauts',
-      headline: 'Kas ir iekļauts',
+      badge: 'Komplekts',
+      headline: 'Viss jau iekļauts',
       subtitle:
-        'Viss nepieciešamais, lai tava mājaslapa būtu gatava klientiem.',
+        'Mājaslapa, kas jau no pirmās dienas gatava piesaistīt un pieņemt klientus.',
       items: [
         'Pielāgota struktūra tavai nišai',
         'Fotogrāfijas, priekšrocības un atsauksmes',
@@ -614,10 +614,10 @@ export const translations = {
       ],
     },
     included: {
-      badge: 'Что входит',
-      headline: 'Что входит',
+      badge: 'Комплект',
+      headline: 'Всё уже включено',
       subtitle:
-        'Всё необходимое, чтобы твой сайт был готов к клиентам.',
+        'Сайт, который с первого дня готов привлекать клиентов и принимать заявки.',
       items: [
         'Структура под твою нишу',
         'Фотографии, преимущества и отзывы',
