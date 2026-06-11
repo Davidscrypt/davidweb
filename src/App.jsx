@@ -4,7 +4,7 @@ import {
   MessageCircle, Mail, Globe, Calendar,
   Smartphone, FileText, Star, ArrowRight,
   MapPin, Clock, Zap, Send, Phone,
-  Instagram, CheckCircle2, Lock,
+  Instagram, CheckCircle2, Lock, TrendingUp,
 } from 'lucide-react'
 import { translations } from './translations'
 
@@ -144,10 +144,21 @@ function HeroMockup() {
                   <div className="h-1 w-full bg-[#9CFF00]/10 rounded-full" />
                 </div>
               </div>
-              <div className="bg-[#9CFF00]/[0.04] rounded-xl p-3 border border-[#9CFF00]/[0.08] flex flex-col items-center justify-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-[#9CFF00]/15 border border-[#9CFF00]/20" />
-                <div className="h-1 w-full bg-[#9CFF00]/15 rounded-full" />
-                <div className="h-3 w-full bg-[#9CFF00]/12 rounded" />
+              {/* Mini growth chart — implies results / incoming leads */}
+              <div className="bg-[#9CFF00]/[0.04] rounded-xl p-2.5 border border-[#9CFF00]/[0.08] flex flex-col justify-between">
+                <div className="flex items-center gap-1">
+                  <TrendingUp className="w-3 h-3 text-[#9CFF00]" strokeWidth={2.5} />
+                  <div className="h-1 w-6 bg-[#9CFF00]/30 rounded-full" />
+                </div>
+                <div className="flex items-end justify-between gap-[3px] h-9 mt-1.5">
+                  {[34, 50, 42, 66, 82, 100].map((h, i) => (
+                    <div
+                      key={i}
+                      className="flex-1 rounded-sm bg-gradient-to-t from-[#9CFF00]/25 to-[#9CFF00]/70"
+                      style={{ height: `${h}%` }}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -164,7 +175,7 @@ function HeroMockup() {
               <div className="w-10 h-1.5 bg-white/8 rounded-full" />
             </div>
             <div className="relative">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=100&h=55&fit=crop&q=70" alt="" className="w-full h-[52px] object-cover" style={{ filter: 'saturate(0.3) brightness(0.5)' }} />
+              <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=100&h=55&fit=crop&q=70" alt="" className="w-full h-[52px] object-cover" style={{ filter: 'saturate(0.3) brightness(0.5)' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050706]/80 to-transparent" />
             </div>
             <div className="px-2 pb-3 space-y-1.5">
@@ -189,6 +200,20 @@ function HeroMockup() {
         <div className="px-3 py-2 bg-[#090D0F]/95 backdrop-blur-sm border border-white/[0.08] rounded-xl shadow-lg flex items-center gap-1.5">
           <Zap className="w-3 h-3 text-[#9CFF00]" />
           <div className="text-white/70 text-[10px] font-medium">3-day launch</div>
+        </div>
+      </div>
+
+      {/* Floating notification — a new lead just arrived */}
+      <div className="absolute -right-5 top-6 animate-float z-20 hidden lg:block" style={{ animationDelay: '0.8s' }}>
+        <div className="px-3 py-2.5 bg-[#090D0F]/95 backdrop-blur-sm border border-white/[0.08] rounded-xl shadow-lg flex items-center gap-2.5">
+          <span className="relative flex-shrink-0 w-7 h-7 rounded-full bg-[#9CFF00]/15 border border-[#9CFF00]/25 flex items-center justify-center">
+            <CheckCircle2 className="w-3.5 h-3.5 text-[#9CFF00]" />
+            <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#9CFF00] ring-2 ring-[#090D0F]" />
+          </span>
+          <div className="space-y-1.5">
+            <div className="h-1.5 w-16 bg-white/25 rounded-full" />
+            <div className="h-1 w-10 bg-[#9CFF00]/40 rounded-full" />
+          </div>
         </div>
       </div>
     </div>
