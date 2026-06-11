@@ -12,7 +12,7 @@ export const translations = {
       cta: 'Get offer',
     },
     hero: {
-      badge: 'Offer for local businesses',
+      badge: 'Digital studio · Web design · E-commerce',
       headline1: 'A ready website',
       headline2: 'for your business in',
       highlight: '3 days',
@@ -291,7 +291,7 @@ export const translations = {
       cta: 'Saņemt piedāvājumu',
     },
     hero: {
-      badge: 'Piedāvājums vietējiem uzņēmumiem',
+      badge: 'Digitālā studija · Web dizains · E-komercija',
       headline1: 'Gatava mājaslapa',
       headline2: 'tavam uzņēmumam',
       highlight: '3 dienu laikā',
@@ -569,7 +569,7 @@ export const translations = {
       cta: 'Получить предложение',
     },
     hero: {
-      badge: 'Предложение для местного бизнеса',
+      badge: 'Цифровая студия · Веб-дизайн · E-commerce',
       headline1: 'Готовый сайт',
       headline2: 'для твоего бизнеса за',
       highlight: '3 дня',
