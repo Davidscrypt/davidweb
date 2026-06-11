@@ -133,7 +133,7 @@ export const translations = {
     },
     process: {
       badge: 'Process',
-      headline: 'How it works',
+      headline: 'From idea to a ready website',
       subtitle: 'Five simple steps from the first message to a ready website.',
       steps: [
         {
@@ -411,7 +411,7 @@ export const translations = {
     },
     process: {
       badge: 'Process',
-      headline: 'Kā tas notiek',
+      headline: 'No idejas līdz gatavai mājaslapai',
       subtitle: 'Pieci vienkārši soļi no pirmās ziņas līdz gatavai mājaslapai.',
       steps: [
         {
@@ -689,7 +689,7 @@ export const translations = {
     },
     process: {
       badge: 'Процесс',
-      headline: 'Как это происходит',
+      headline: 'От идеи до готового сайта',
       subtitle: 'Пять простых шагов от первого сообщения до готового сайта.',
       steps: [
         {
