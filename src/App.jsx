@@ -228,6 +228,14 @@ const EXAMPLE_IMAGES = [
   '/work-booking.png',
 ]
 
+// Live project links (clicking the preview opens the real site). Empty = concept, no link.
+const EXAMPLE_LINKS = [
+  '',
+  'https://epiltonriga.lv',
+  '',
+  '',
+]
+
 // Real photos for "Who It's For" cards (one per niche, all verified live)
 const WHO_FOR_IMAGES = [
   'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=240&fit=crop&q=80', // service providers
@@ -243,7 +251,7 @@ const WHO_FOR_IMAGES = [
 // Conceptual address shown in the browser frame of each project card (not a real domain claim)
 const siteLabelFor = (url) =>
   url.includes('furniture') ? 'furniture-studio'
-    : url.includes('beauty') ? 'beauty-studio'
+    : url.includes('beauty') ? 'epiltonriga.lv'
       : url.includes('local') ? 'local-business'
         : 'website'
 
@@ -743,27 +751,39 @@ export default function App() {
                       </div>
                     ) : (
                       <div className="relative border-b border-white/[0.06] bg-gradient-to-br from-[#0e1316] to-[#0a0d0f] aspect-[4/3] p-4 sm:p-5 flex items-center">
-                        <div className="w-full rounded-xl overflow-hidden border border-white/[0.09] shadow-[0_20px_45px_-15px_rgba(0,0,0,0.8)] group-hover:border-[#9CFF00]/25 group-hover:-translate-y-1 group-hover:shadow-[0_28px_55px_-15px_rgba(0,0,0,0.85)] transition-all duration-500 ease-premium">
-                          {/* Browser chrome */}
-                          <div className="h-8 bg-[#0e1316] border-b border-white/[0.07] flex items-center px-3 gap-1.5">
-                            <span className="w-2 h-2 rounded-full bg-[#ff5f57]/70" />
-                            <span className="w-2 h-2 rounded-full bg-[#febc2e]/70" />
-                            <span className="w-2 h-2 rounded-full bg-[#28c840]/70" />
-                            <div className="flex-1 ml-2 mr-1 h-4 rounded bg-white/[0.05] border border-white/[0.06] flex items-center justify-center gap-1">
-                              <Lock className="w-2 h-2 text-white/30" strokeWidth={2.5} />
-                              <span className="text-[9px] text-white/40 font-medium tracking-wide truncate">
-                                {siteLabelFor(EXAMPLE_IMAGES[i])}
-                              </span>
-                            </div>
-                          </div>
-                          {/* Full screenshot — shown completely, never cropped */}
-                          <img
-                            src={EXAMPLE_IMAGES[i]}
-                            alt={`${card.type} — concept by narsia`}
-                            loading="lazy"
-                            className="block w-full h-auto"
-                          />
-                        </div>
+                        {(() => {
+                          const link = EXAMPLE_LINKS[i]
+                          const Frame = link ? 'a' : 'div'
+                          const linkProps = link
+                            ? { href: link, target: '_blank', rel: 'noopener noreferrer' }
+                            : {}
+                          return (
+                            <Frame
+                              {...linkProps}
+                              className={`block w-full rounded-xl overflow-hidden border border-white/[0.09] shadow-[0_20px_45px_-15px_rgba(0,0,0,0.8)] group-hover:border-[#9CFF00]/25 group-hover:-translate-y-1 group-hover:shadow-[0_28px_55px_-15px_rgba(0,0,0,0.85)] transition-all duration-500 ease-premium ${link ? 'cursor-pointer' : ''}`}
+                            >
+                              {/* Browser chrome */}
+                              <div className="h-8 bg-[#0e1316] border-b border-white/[0.07] flex items-center px-3 gap-1.5">
+                                <span className="w-2 h-2 rounded-full bg-[#ff5f57]/70" />
+                                <span className="w-2 h-2 rounded-full bg-[#febc2e]/70" />
+                                <span className="w-2 h-2 rounded-full bg-[#28c840]/70" />
+                                <div className="flex-1 ml-2 mr-1 h-4 rounded bg-white/[0.05] border border-white/[0.06] flex items-center justify-center gap-1">
+                                  <Lock className="w-2 h-2 text-white/30" strokeWidth={2.5} />
+                                  <span className="text-[9px] text-white/40 font-medium tracking-wide truncate">
+                                    {siteLabelFor(EXAMPLE_IMAGES[i])}
+                                  </span>
+                                </div>
+                              </div>
+                              {/* Full screenshot — shown completely, never cropped */}
+                              <img
+                                src={EXAMPLE_IMAGES[i]}
+                                alt={`${card.type} — narsia`}
+                                loading="lazy"
+                                className="block w-full h-auto"
+                              />
+                            </Frame>
+                          )
+                        })()}
                       </div>
                     )}
 

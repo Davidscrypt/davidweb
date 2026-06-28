@@ -4,7 +4,7 @@ export const translations = {
       home: 'Home',
       whoFor: "Who It's For",
       included: "What's Included",
-      examples: 'Examples',
+      examples: 'Portfolio',
       process: 'Process',
       pricing: 'Pricing',
       faq: 'FAQ',
@@ -104,7 +104,7 @@ export const translations = {
     },
     examples: {
       badge: 'Our Work',
-      headline: 'Recent Projects',
+      headline: 'Portfolio',
       subtitle:
         'Real website concepts we create for local businesses and specialists.',
       cards: [
@@ -114,7 +114,7 @@ export const translations = {
           features: ['Product & project gallery', 'Made-to-order request form', 'Clear contact & quote buttons'],
         },
         {
-          type: 'Beauty studio',
+          type: 'Beauty studio EPIL_TON Rīga',
           desc: 'A premium, trust-first presentation for a specialist studio.',
           features: ['Editorial photo layout', 'Services & pricing', 'One-tap booking & calls'],
         },
@@ -269,7 +269,7 @@ export const translations = {
     },
     footer: {
       desc: 'Websites for businesses and specialists — built to bring real clients.',
-      col1: { title: 'Explore', links: ["Who It's For", 'Examples', 'Pricing'] },
+      col1: { title: 'Explore', links: ["Who It's For", 'Portfolio', 'Pricing'] },
       col2: { title: 'Details', links: ["What's Included", 'Process', 'FAQ'] },
       email: 'hello@bynarsia.com',
       copyright: '© 2026 narsia. All rights reserved.',
@@ -283,7 +283,7 @@ export const translations = {
       home: 'Sākums',
       whoFor: 'Kam paredzēts',
       included: 'Kas iekļauts',
-      examples: 'Piemēri',
+      examples: 'Portfolio',
       process: 'Process',
       pricing: 'Cenas',
       faq: 'Jautājumi',
@@ -383,7 +383,7 @@ export const translations = {
     },
     examples: {
       badge: 'Mūsu darbi',
-      headline: 'Nesenie projekti',
+      headline: 'Portfolio',
       subtitle: 'Reāli mājaslapu koncepti, ko veidojam vietējiem uzņēmumiem un speciālistiem.',
       cards: [
         {
@@ -392,7 +392,7 @@ export const translations = {
           features: ['Produktu un projektu galerija', 'Pasūtījuma pieprasījuma forma', 'Skaidras kontaktu un cenu pogas'],
         },
         {
-          type: 'Skaistuma studija',
+          type: 'Skaistuma studija EPIL_TON Rīga',
           desc: 'Premium, uz uzticību vērsta prezentācija speciālista studijai.',
           features: ['Editorial foto izkārtojums', 'Pakalpojumi un cenas', 'Rezervācija un zvani vienā pieskārienā'],
         },
@@ -547,7 +547,7 @@ export const translations = {
     },
     footer: {
       desc: 'Mājaslapas uzņēmumiem un speciālistiem — veidotas reālu klientu piesaistei.',
-      col1: { title: 'Izpētīt', links: ['Kam paredzēts', 'Piemēri', 'Cenas'] },
+      col1: { title: 'Izpētīt', links: ['Kam paredzēts', 'Portfolio', 'Cenas'] },
       col2: { title: 'Informācija', links: ['Kas iekļauts', 'Process', 'Jautājumi'] },
       email: 'hello@bynarsia.com',
       copyright: '© 2026 narsia. Visas tiesības aizsargātas.',
@@ -561,7 +561,7 @@ export const translations = {
       home: 'Главная',
       whoFor: 'Для кого',
       included: 'Что входит',
-      examples: 'Примеры',
+      examples: 'Портфолио',
       process: 'Процесс',
       pricing: 'Цены',
       faq: 'Вопросы',
@@ -661,7 +661,7 @@ export const translations = {
     },
     examples: {
       badge: 'Наши работы',
-      headline: 'Недавние проекты',
+      headline: 'Портфолио',
       subtitle: 'Реальные концепты сайтов, которые мы создаём для локального бизнеса и специалистов.',
       cards: [
         {
@@ -670,7 +670,7 @@ export const translations = {
           features: ['Галерея товаров и проектов', 'Форма заявки на изготовление', 'Понятные кнопки контактов и расчёта'],
         },
         {
-          type: 'Бьюти-студия',
+          type: 'Бьюти-студия EPIL_TON Rīga',
           desc: 'Премиальная презентация с акцентом на доверие для студии-специалиста.',
           features: ['Editorial фото-сетка', 'Услуги и цены', 'Запись и звонки в одно касание'],
         },
@@ -825,7 +825,7 @@ export const translations = {
     },
     footer: {
       desc: 'Сайты для бизнеса и специалистов — созданные, чтобы приводить реальных клиентов.',
-      col1: { title: 'Навигация', links: ['Для кого', 'Примеры', 'Цены'] },
+      col1: { title: 'Навигация', links: ['Для кого', 'Портфолио', 'Цены'] },
       col2: { title: 'Подробнее', links: ['Что входит', 'Процесс', 'Вопросы'] },
       email: 'hello@bynarsia.com',
       copyright: '© 2026 narsia. Все права защищены.',
